@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 function Adicao(a, b) {
     return a + b
 }
@@ -13,10 +15,14 @@ function Subtracao(a, b) {
 function Divisao(a, b) {
     return a / b
 }
-
-function opcao() {
-    const prompt = require('prompt-sync')();
-    prompt("digite a opcao ")
+function Porcentagem (a, b){
+    return (a / b) * 100;
 }
 
-module.exports = {Adicao, Multiplicacao, Subtracao, Divisao, opcao}
+module.exports = {Adicao, Multiplicacao, Subtracao, Divisao, Porcentagem}
+
+/* if (isNaN(numero1) || isNaN(numero2)){
+    console.log("Não é um numero, invalido")
+ } else {
+ console.log("Resultado: " + funcoes.Adicao(numero1, numero2))
+ } */
